@@ -19,7 +19,7 @@ public class ApiGatewayServerApplication {
     public RouteLocator gatewayRoutes(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route("rdv", r -> r.path("/rdv/**")
-                        .uri("http://localhost:8081/"))
+                        .uri("http://localhost:8089/"))
                 .build();
     }
 }
